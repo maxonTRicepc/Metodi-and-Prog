@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void Shell(int A[], int n) //сортировка Шелла
+void Shell(int A[], int n)
 {
 	int d = n;
 	d = d / 2;
@@ -25,7 +25,9 @@ void Shell(int A[], int n) //сортировка Шелла
 void main()
 {
 	setlocale(LC_ALL, "Rus");
-	cout << "Размер массива > "; int n; cin >> n;
+	cout << "Размер массива > "; 
+	int n;
+	cin >> n;
 	int* A = new int[n];
 	for (int i = 0; i < n; i++)
 	{
