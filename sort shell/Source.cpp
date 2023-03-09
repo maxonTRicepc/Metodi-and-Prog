@@ -1,5 +1,10 @@
+#include <thread>
 #include <iostream>
+#include <string>
+#include <vector>
+
 using namespace std;
+
 void Shell(int A[], int n)
 {
 	int d = n;
@@ -24,16 +29,15 @@ void Shell(int A[], int n)
 
 void main()
 {
-	setlocale(LC_ALL, "Rus");
-	cout << "Размер массива > "; 
+	cout << " Array size > "; 
 	int n;
 	cin >> n;
 	int* A = new int[n];
 	for (int i = 0; i < n; i++)
 	{
-		cout << i + 1 << " элемент > "; cin >> A[i];
+		cout << i + 1 << " element > "; cin >> A[i];
 	}
-	cout << "\nРезультирующий массив: ";
+	cout << "\nResult array: ";
 	Shell(A, n);
 	delete[] A;
 	system("pause>>void");
